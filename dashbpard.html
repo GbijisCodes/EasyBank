@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <!-- Your logo here -->
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+    <div class="dashboard-title">
+      Dashboard
+    </div>
+    <div class="user-actions">
+      <div class="message-icon">
+        <i class="fas fa-envelope"></i>
+        <!-- Dropdown for messages -->
+        <div class="dropdown">
+          <!-- Message dropdown content here -->
+          <!-- Example: -->
+          <a href="#">Message 1</a>
+          <a href="#">Message 2</a>
+          <a href="#">Message 3</a>
+        </div>
+      </div>
+      <div class="profile">
+        <!-- Profile photo -->
+        <img src="./images/boy director.jpg" alt="Profile Photo" class="profimage">
+        <!-- Dropdown for profile -->
+        <div class="dropdown">
+          <!-- Profile dropdown content here -->
+          <!-- Example: -->
+          <a href="#">Account Settings</a>
+          <a href="#">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="sidebar">
+        <div class="sidebar-item" id="dashboard">
+            <i class="fas fa-tachometer-alt"></i>
+    
+        <span class="sidebar-text">Dashboard</span>
+        </div>
+        <div class="sidebar-item" id="analytics">
+            <i class="fas fa-spinner"></i>
+        <span class="sidebar-text">Activity</span>
+        </div>
+        <div class="sidebar-item" id="settings">
+            <i class="fas fa-shield-alt"></i>
+        <span class="sidebar-text">Security</span>
+        </div>
+        <div class="sidebar-item" id="settings">
+            <i class="fas fa-wallet"></i>
+            <span class="sidebar-text">Payments</span>
+        </div>
+        <div class="sidebar-item" id="settings">
+            <i class="fas fa-cog"></i>
+            <span class="sidebar-text">Settings</span>
+        </div>
+        
+    </div> 
+    <div class="content">
+    <div class="content">
+    <!-- Your main content here -->
+
+
+    <div class="card" onclick="openModal(1)">
+        <!-- Card content here -->
+        <div class="card-content">
+          <div class="card-name"></div>
+          <div class="card-number"></div>
+          <div class="card-details">
+            <div class="expiry-date"></div>
+            <div class="cvv"></div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  
+  <!-- Modal for card information -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Enter Card Information
+  </button>
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Card Information</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="cardForm">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required minlength="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required minlength="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number:</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required pattern="[0-9]{16}" maxlength="16">
+                    </div>
+                    <div class="mb-3">
+                        <label for="expiryDate" class="form-label">Expiry Date:</label>
+                        <input type="text" class="form-control" id="expiryDate" name="expiryDate" required pattern="(0[1-9]|1[0-2])\/([2-9][0-9])" placeholder="MM/YY">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cvv" class="form-label">CVV:</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" required pattern="[0-9]{3}" maxlength="3">
+                    </div>
+                    <div class="mb-3 text-danger" id="validationErrors"></div>
+                    <button type="button" class="btn btn-success" onclick="addCard()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+  </div>
+
+  <script src="./Js/bootstrap.min.js"></script>
+  <script src="dashboard.js"></script>
+  
+</body>
+</html>

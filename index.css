@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: pubsb;
+    src: url(./Public_Sans/static/PublicSans-Black.ttf);
+}
+
+@font-face {
+    font-family: pubsm;
+    src: url(./Public_Sans/static/PublicSans-Medium.ttf);
+}
+@font-face {
+    font-family: pubsl;
+    src: url(./Public_Sans/static/PublicSans-Light.ttf);
+}
+
+
+.intro {
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    /* border: 2px solid black; */
+    
+}
+
+
+.head {
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* border: 2px solid black; */
+}
+
+.selectionH {
+    display: flex;
+    gap: 20px;
+}
+
+.selectionH p {
+    font-family: pubsm;
+    font-size: 14px;
+    font-weight: 500;
+    
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #49474785;
+}
+.selectionH p:hover {
+    font-family: pubsm;
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #0d0d0d;
+}
+
+.hbut {
+    display: flex;
+    gap: 20px;
+}
+
+.login-link {
+    color: black; /* Set the text color to black */
+    text-decoration: none;
+    padding: 8px 1sspx; /* Adjust padding as needed */
+    font-size: 20px;
+
+}
+
+.signup {
+    font-family: pubsm;
+    font-size: 16px;
+    padding: 8px 40px;
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border: none;
+    color: white;
+    border-radius: 25px;
+}
+.learntext{
+    font-family:DmsansR;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+.speedup{
+    font-family:DmsansR;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #0d0d0d85;
+}
+
+.sect2{
+    height: 700px;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.sectsub2{
+    height: 700px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
+.head1{
+    font-family: pubsl;
+    font-size: 40px;
+    
+}
+.sub1{
+    font-family: pubsl;
+    color: rgba(69, 65, 65, 0.552)
+}
+.bgintrod{
+    /*display: none;*/
+    width: 100%;
+    margin-left: 50px;
+    margin-top: -150px;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.bgphone{
+    height: fit-content;
+    width: 50%;
+    margin-top: -70px;
+    margin-left: 800px; 
+    z-index: 1;
+    position: absolute;
+    background-image: url();
+    
+    
+}
+.nextgen{
+    padding-top: 200px;
+    margin-left: 60px;
+}
+.sect3{
+    background-color: rgba(231, 230, 230, 0.574);
+    height: fit-content;
+    padding: 150px;
+
+}
+.why{
+    font-family: pubsl;
+    font-size: 40px;
+}
+.leverage{
+    font-family: pubsl;
+    font-size: 16px;
+    color: rgba(69, 65, 65, 0.552)
+}
+.subheadsect3{
+    font-family: pubsl;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.subsect3{
+    font-family: pubsl;
+    font-size: 16px;
+    color: rgba(69, 65, 65, 0.552)
+}
+
+.sect4{
+    padding: 80px;
+   
+    
+}
+
+.pic{
+    height: 200px;
+    width: 250px;
+    /* border: solid 2px black; */
+    border-radius: 10px 10px 0 0;
+    background-image: url(./images/image-currency.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1{
+    height: 200px;
+    width: 250px;
+    /* border: solid 2px black; */
+    border-radius: 10px 10px 0 0;
+    background-image: url(./images/image-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic2{
+    height: 200px;
+    width: 250px;
+    /* border: solid 2px black; */
+    border-radius: 10px 10px 0 0;
+    background-image: url(./images/image-plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic3{
+    height: 200px;
+    width: 250px;
+    /* border: solid 2px black; */
+    border-radius: 10px 10px 0 0;
+    background-image: url(./images/image-confetti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.picwd{
+    padding: 20px;
+    height: 200px;
+    width: 250px;
+    /* border: solid 2px black; */
+    border-radius: 0 0 10px 10px;
+}
+
+.m > div{
+    margin: 30px auto;
+
+}
+.super{
+    font-family: pubsl;
+    font-size: 10px;
+    color: rgba(69, 65, 65, 0.552)
+}
+.title{
+    font-family: pubsl;
+    font-size: 18px;
+}
+.bod{
+    font-family: pubsl;
+    font-size: 13px;
+    color: rgba(69, 65, 65, 0.552)
+}
+.foot{
+    margin-top: 150px;
+    background-color: hsl(233, 26%, 24%);
+    height: fit-content;
+    padding: 40px;
+}
+
+.links{
+    margin-top: 30px;
+    color: white;
+}
+.ftext{
+    margin-top: 30px;
+    font-family: pubsl;
+    font-size: 12px;
+}
+@media all and (max-width:480px){
+    .why{
+        text-align: center;
+        font-family: pubsm;
+        font-size: 35px;
+    }
+    .selectionH {
+        display: none;
+        
+    }
+    .pic{
+        height: 200px;
+        width: 350px;
+        /* border: solid 2px black; */
+        border-radius: 10px 10px 0 0;
+        background-image: url(./images/image-currency.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pic1{
+        height: 200px;
+        width: 350px;
+        /* border: solid 2px black; */
+        border-radius: 10px 10px 0 0;
+        background-image: url(./images/image-restaurant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pic2{
+        height: 200px;
+        width: 350px;
+        /* border: solid 2px black; */
+        border-radius: 10px 10px 0 0;
+        background-image: url(./images/image-plane.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pic3{
+        height: 200px;
+        width: 350px;
+        /* border: solid 2px black; */
+        border-radius: 10px 10px 0 0;
+        background-image: url(./images/image-confetti.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .picwd{
+        padding: 20px;
+        height: 200px;
+        width: 350px;
+        /* border: solid 2px black; */
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .sect3{
+        background-color: rgba(231, 230, 230, 0.574);
+        height: fit-content;
+        padding: 50px;
+        text-align: center;
+    
+    }
+
+    .bgintrod{
+        display: none;
+        width: 100%;
+        margin-left: 50px;
+        margin-top: -150px;
+        position: absolute;
+        overflow: hidden;
+        
+    }
+
+    .bgphone{
+        height: fit-content;
+        width: 50%;
+        margin-top: -70px;
+        margin-left: 800px; 
+        z-index: 1;
+        position: absolute;
+        
+        
+    }
+    .head1{
+        font-family: pubsm;
+        font-size: 24px;
+        text-align: center;
+        
+    }
+    .sub1{
+        font-family: pubsl;
+        color: rgba(69, 65, 65, 0.552);
+        font-size: 12px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sect2{
+        height: 700px;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    .sectsub2{
+        height: 700px;
+        background-color: whitesmoke;
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        
+    }
+    .nextgen{
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+  
+}

@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    background-color:  hsl(233, 26%, 24%);
+    color: #fff;
+    width: 70px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.3s;
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  .sidebar:hover {
+    width: 150px;
+  }
+  
+  .sidebar-item {
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .sidebar-item:hover {
+    color: #333;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .sidebar-text {
+    display: none;
+  }
+  
+  .sidebar:hover .sidebar-text {
+    display: inline;
+  }
+  
+  .content {
+    margin-left: 70px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+  }
+  
+  .sidebar:hover ~ .content {
+    margin-left: 150px;
+  }
+  
+/* Your existing CSS */
+/* Add styles for the header */
+.header {
+    background-color: #14c89e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin-right: auto; /* Pushes the logo to the left */
+  }
+  
+  .dashboard-title {
+    margin: 0 auto; /* Centers the title */
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-icon, .profile {
+    margin-left: 20px;
+    position: relative; /* Necessary for dropdown positioning */
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    z-index: 1;
+    top: 30px;
+    right: 0;
+  }
+  
+  .dropdown a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .message-icon:hover .dropdown, .profile:hover .dropdown {
+    display: block;
+  }
+  .profimage{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .content{
+    display: flex;
+  }
+
+
+  .card {
+    background-color: whitesmoke;
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .card-content {
+    text-align:justify;
+  } */
+  
+  .card-name {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-number {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .expiry-date, .cvv {
+    font-size: 1rem;
+  }
+  
+  .expiry-date {
+    margin-left: 20px;
+  }
+  
+  .cvv {
+    margin-right: 20px;
+  }
+  
